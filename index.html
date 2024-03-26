@@ -4,99 +4,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>kiuna website project</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-        .top{
+        .top {
             position: relative;
-            background-color:aqua;
-            height: 300px;
-            top: 0;
+            background-image: url(/Nairobi-Night-Skyline.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+            color: white;
         }
-        .nav ul li {
-            position: relative;
+
+        .top .header .logo li {
             display: inline-block;
-            left: 600px;
-            margin-right: 14px;
 
         }
 
-        .nav ul {
+        .top .header .bar {
             position: absolute;
+            left: 30%;
             top: 0;
         }
 
-        .logo {
-            position: absolute;
-            top: 0;
-            font-size: x-large;
-        }
-
-        .login {
-            position: absolute;
+        .top .header .bar li {
             display: inline-block;
-            left: 1000px;
-            top: 0;
-            margin: 15px;
-
-
+            margin-left: 15px;
         }
 
-        .content {
-            position:absolute;
+        .top .header .login {
+            position: absolute;
+            right: 10%;
+            top: 0;
+        }
+
+        .top .header .login li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .top .content {
             text-align: center;
-            margin-top: 100px;
+            margin-top: 10%;
         }
 
-        input {
-            position: absolute;
+        .content input{
             background-color: orangered;
             color: white;
-            left: 600px;
+            height: 20px;
         }
-        
+
+
+        .words {
+            text-align: center;
+            color: black;
+        }
+
+        .btm .container .box img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .btm .container .box {
+            width: 200px;
+            margin-right: 30px;
+        }
+
+        .btm .container .box .icon img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .btm .container .box .icon {
+            position: relative;
+        }
+
+        .btm .container .box .icon .comment {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .btm .container {
+            display: flex;
+            justify-content: center;
+
+        }
     </style>
 
 </head>
 
 <body>
     <div class="top">
-        <div class="logo"><i class="fa-sharp fa-regular fa-gem" style="color: #f00014;"></i>
-            Study Course <br> <span>journey to success</span></div>
 
-        <div class="nav">
-            <ul>
+        <div class="header">
+            <ul class="logo">
+                <li><i class="fa-sharp fa-regular fa-gem" style="color: #f00014;"></i></li>
+                <li>Study Course <br> journey to success</li>
+            </ul>
+
+
+            <ul class="bar">
                 <li>Home</li>
                 <li>About</li>
                 <li>Courses</li>
                 <li>Pages</li>
                 <li>Contact</li>
             </ul>
+
+
+            <ul class="login">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-sharp fa-solid fa-user" style="color: #1e1e1e;"></i>Login
+                <i class="fa-light fa-moon"></i>
+            </ul>
+
+            <div class="content">
+                <h1>50% on all popular <br>Courses</h1>
+                <p>Take the first step to your success with us</p>
+                <input type="button" value="Ready to get started">
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,192L80,208C160,224,320,256,480,229.3C640,203,800,117,960,112C1120,107,1280,181,1360,218.7L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
+            </svg>
         </div>
 
-        <div class="login">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-sharp fa-solid fa-user" style="color: #1e1e1e;"></i>Login
-            <i class="fa-light fa-moon"></i>
-        </div>
 
-        <div class="content">
-            <h2>50% on all popular <br>Courses</h2>
-            <p>Take the first step to your success with us</p>
-        </div>
+        <div class="btm">
+            <div class="words">
+                <h4>JOIN OUR LEARN COURSES</h4>
+                <h2>Featured online Courses</h2>
 
-        <div>
-            <input type="button" value="Ready to get started">
-        </div>
+                <div class="container">
+                    <div class="box">
+                        <img src="/school.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="icon">
+                            <img src="/school.jpg" alt="">
+                            <p class="comment">Lorem ipsum, dolor</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/school.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="icon">
+                            <img src="/school.jpg" alt="">
+                            <p class="comment">Lorem ipsum, dolor</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/school.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="icon">
+                            <img src="/school.jpg" alt="">
+                            <p class="comment">Lorem ipsum, dolor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-
-
-
-
-    </div>
 
 
 </body>
